@@ -20,46 +20,27 @@ class Comments extends Component {
   render() {
     return (
       <div className="app-container">
-        <div className="comments-container">
-          <div>
+        <div className="comment-con">
+          <div className="comments">
             <h1 className="heading">Comments</h1>
-            <p className="paragraph">Say something about 4.0 Technologies</p>
-            <form>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="Input-area"
-              />
-              <textarea
-                rows="5"
-                cols="50"
-                className="Comments-area"
-                placeholder="Your Comment"
-              />
-            </form>
-            <button className="Add-button" type="button">
+            <p className="description"> Say something about 4.0 Technologies</p>
+            <input type="text" className="comm-input" />
+            <textarea className="text-area" rows="9" cols="50" />
+            <button type="button" className="button">
               Add Comment
             </button>
           </div>
-          <div className="image-container">
+          <div className="comments-image">
             <img
               src="https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png"
               alt="comments"
-              className="image"
+              className="comm-image"
             />
           </div>
         </div>
-        <hr className="horizontal-line" />
-        <div className="comments-list">
-          <div className="count-comments">
-            <button className="count-button" type="button">
-              <p className="count">0</p>
-            </button>
-            <p className="comments">Comments</p>
-          </div>
-          <ul className="list">
-            <CommentItem />
-          </ul>
+        <hr className="hr-line" />
+        <div>
+          <p>value</p>{' '}
         </div>
       </div>
     )
